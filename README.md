@@ -1,50 +1,26 @@
 # LLM-Learning
 
-A structured, hands-on learning repository focused on **Large Language Models, NLP, RAG, fine-tuning, evaluation, agents, and production LLM systems**.
+A hands-on learning portfolio by **Ercan Sevdi**, progressing from LLM fundamentals to practical LLM engineering through **30 projects**.
 
-This repository documents my progression from fundamental LLM concepts to advanced LLM engineering through **30 practical projects**.
+The series covers tokenization, text generation, embeddings, retrieval-augmented generation (RAG), local inference, Transformer internals, fine-tuning, evaluation, agents, and deployment. These are roadmap topics; the completed implementation currently covers Project 01.
 
-## Objective
+**Progress: 1 / 30 completed**  
+**Current:** [01 — Tokenizer Explorer](./01-tokenizer-explorer/README.md)  
+**Next:** 02 — Next Token Predictor
 
-The goal of this repository is not only to learn how to use LLMs, but to understand how modern LLM systems work end-to-end:
+## Completed Project
 
-```text
-Text
-  ↓
-Tokenization
-  ↓
-Embeddings
-  ↓
-Transformer
-  ↓
-Inference
-  ↓
-RAG
-  ↓
-Fine-Tuning
-  ↓
-Evaluation
-  ↓
-Agents
-  ↓
-Deployment
-```
+### [01 — Tokenizer Explorer](./01-tokenizer-explorer/README.md)
 
-The first milestone is to complete all **30 projects** in this repository.
+A Jupyter notebook using the `Qwen/Qwen2.5-0.5B-Instruct` tokenizer to explore:
 
-After this learning series, larger production-grade and job-oriented projects will be developed as separate repositories.
+- Subword tokens and token IDs.
+- Encoding text and decoding it back.
+- Turkish word forms and their token counts.
+- A Turkish / English sentence comparison.
+- Industrial examples involving motors, TinyML, and smart factories.
 
----
-
-## Progress
-
-**Completed: 1 / 30**
-
-```text
-[█                             ] 3%
-```
-
----
+[Open the notebook](./01-tokenizer-explorer/tokenizer_explorer.ipynb) · [Read the project guide](./01-tokenizer-explorer/README.md)
 
 ## 30-Project Roadmap
 
@@ -81,207 +57,32 @@ After this learning series, larger production-grade and job-oriented projects wi
 | 29 | Multimodal RAG | Text, image and table retrieval | ⬜ Planned |
 | 30 | End-to-End LLM Platform | RAG, fine-tuning, evaluation, API and UI | ⬜ Planned |
 
----
-
-## Repository Structure
+## Files Currently in This Repository
 
 ```text
 LLM-Learning/
-│
 ├── README.md
-├── LICENSE
 ├── .gitignore
-│
-├── 01-tokenizer-explorer/
-│   ├── README.md
-│   ├── tokenizer_explorer.py
-│   ├── tokenizer_explorer.ipynb
-│   └── requirements.txt
-│
-├── 02-next-token-predictor/
-├── 03-huggingface-text-generator/
-├── 04-generation-playground/
-├── ...
-└── 30-end-to-end-llm-platform/
+└── 01-tokenizer-explorer/
+    ├── README.md
+    └── tokenizer_explorer.ipynb
 ```
 
-Each project will contain its own documentation, source code, dependencies, experiments, and results when applicable.
+Projects 02–30 are planned. Their folders will be added when implementation starts. Project 01 is currently notebook-based; a standalone Python script, `requirements.txt`, and a repository `LICENSE` file have not been added.
 
----
+## Run Project 01
 
-## Standard Project Format
+See the [Project 01 setup and usage guide](./01-tokenizer-explorer/README.md#run-the-notebook) for the complete instructions. Open its notebook in Jupyter or Google Colab and execute the cells in order.
 
-Each project should follow a consistent structure:
-
-```text
-project-name/
-│
-├── README.md
-├── src/ or main.py
-├── notebook.ipynb
-├── requirements.txt
-├── results/
-└── screenshots/
-```
-
-Not every project requires every folder. The structure will be adapted according to the project.
-
----
-
-## Learning Areas
-
-This repository covers:
-
-- Tokenization
-- Hugging Face Transformers
-- Prompting
-- Text generation
-- Embeddings
-- Semantic search
-- Vector databases
-- Retrieval-Augmented Generation (RAG)
-- Local LLM inference
-- Quantization
-- Transformer architecture
-- Causal language modeling
-- LoRA
-- QLoRA
-- Instruction fine-tuning
-- LLM evaluation
-- Hallucination detection
-- Tool calling
-- Agentic AI
-- Multi-agent systems
-- FastAPI
-- Model serving
-- Production RAG
-- Multimodal LLM systems
-
----
-
-## Technology Stack
-
-The stack will evolve throughout the 30 projects.
-
-Core technologies include:
-
-```text
-Python
-Jupyter Notebook
-PyTorch
-Hugging Face Transformers
-Hugging Face PEFT
-Sentence Transformers
-FAISS / Qdrant
-FastAPI
-llama.cpp
-vLLM
-Docker
-Git / GitHub
-```
-
-Additional tools will be introduced when required by individual projects.
-
----
+The current project uses Python, Jupyter, and Hugging Face Transformers. Other technologies will be introduced as the roadmap advances.
 
 ## Portfolio Strategy
 
-This repository represents the **learning and experimentation layer** of my LLM portfolio.
+Small and medium learning projects stay in this repository. Larger independent portfolio applications will have their own repositories after this learning series.
 
-Small and medium-scale exercises remain inside `LLM-Learning`.
-
-Larger production-grade projects will be developed as independent repositories, including areas such as:
-
-- Industrial RAG
-- Industrial AI assistants
-- Turkish LLM fine-tuning
-- LLM evaluation platforms
-- Agentic AI systems
-- Local LLM serving
-- Multimodal industrial assistants
-- Production LLM infrastructure
-
----
-
-## Engineering Focus
-
-My long-term direction combines:
-
-```text
-Electrical / Electronics Engineering
-                +
-Industrial Automation
-                +
-Artificial Intelligence
-                +
-Large Language Models
-```
-
-The objective is to build LLM systems that solve real engineering and industrial problems rather than only generic chatbot applications.
-
----
-
-## Current Project
-
-### 01 — Tokenizer Explorer
-
-Topics:
-
-- Tokenizer
-- Vocabulary
-- Token IDs
-- Encoding
-- Decoding
-- Subword tokenization
-- Turkish morphology
-- Turkish vs. English tokenization
-
-Status: **Completed**
-
----
-
-## Next Project
-
-### 02 — Next Token Predictor
-
-The next project will focus on the fundamental idea behind autoregressive language models:
-
-```text
-P(x_t | x_1, x_2, ..., x_(t-1))
-```
-
-The project will visualize the most probable next tokens for a given input sequence.
-
----
-
-## Long-Term Goal
-
-This repository is part of a broader two-year AI engineering portfolio.
-
-The target is to build a large body of practical work while maintaining a smaller number of strong, production-grade flagship projects for CV and international job applications.
-
----
+My direction combines electrical and electronics engineering, industrial automation, and AI, with an emphasis on engineering and industrial use cases.
 
 ## Author
 
-**Ercan Sevdi**
-
-Electrical & Electronics Engineer  
-Industrial Automation / Electronics Educator  
-Artificial Intelligence M.Sc. Student
-
-Focus areas:
-
-- Large Language Models
-- NLP
-- TinyML
-- Industrial AI
-- Reinforcement Learning
-- Robotics
-- Data Science
-
----
-
-## License
-
-This repository is licensed under the MIT License.
+**Ercan Sevdi**  
+Electrical & Electronics Engineer · Industrial Automation / Electronics Educator · Artificial Intelligence M.Sc. Student
